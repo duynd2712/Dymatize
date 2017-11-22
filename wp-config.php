@@ -25,7 +25,7 @@ if ( ! defined( 'WPCF7_AUTOP' ) ) {
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'gym ');
+define('DB_NAME', 'gym');
 
 /** MySQL database username */
 define('DB_USER', 'root');
