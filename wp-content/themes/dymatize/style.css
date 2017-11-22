@@ -1,0 +1,1270 @@
+/*   
+Theme Name: DYMATIZE THEME
+Theme URI: http://ndd-gmo.esy.es/html/dymatize/;
+Description: This is just a BLANK starter WordPress Theme template -- WordPress v3.0.1
+Author: Nguyen Duc Duy
+Author URI: http://chriscoyier.net
+Version: 2
+*/
+
+/*--FONT--*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+
+@font-face {
+    font-family: "Tungsten-Bold";
+    src: url("fonts/Tungsten-Bold/Tungsten-Bold.eot");
+    src: url("fonts/Tungsten-Bold/Tungsten-Bold.otf") format("opentype"),
+    url("fonts/Tungsten-Bold/Tungsten-Bold.ttf") format("truetype")
+}
+@font-face {
+    font-family: "Tungsten-Medium";
+    src: url("fonts/Tungsten-Medium/Tungsten-Medium.eot");
+    src: url("fonts/Tungsten-Medium/Tungsten-Medium.otf") format("opentype"),
+    url("fonts/Tungsten-Medium/Tungsten-Medium.ttf") format("truetype"),
+    url("fonts/Tungsten-Medium/Tungsten-Medium.woff") format("woff")
+}
+@font-face {
+    font-family: "Tungsten-Book";
+    src: url("fonts/Tungsten-Book/Tungsten-Book.eot");
+    src: url("fonts/Tungsten-Book/Tungsten-Book.otf") format("opentype"),
+    url("fonts/Tungsten-Book/Tungsten-Book.ttf") format("truetype"),
+    url("fonts/Tungsten-Book/Tungsten-Book.woff") format("woff")
+}
+@font-face {
+    font-family: "Tungsten-Semibold";
+    src: url("fonts/Tungsten-Semibold/Tungsten-Semibold.eot");
+    src: url("fonts/Tungsten-Semibold/Tungsten-Semibold.otf") format("opentype"),
+    url("fonts/Tungsten-Semibold/Tungsten-Semibold.ttf") format("truetype")
+}
+@font-face {
+    font-family: "VitesseSans-Book";
+    src: url("fonts/VitesseSans-Book/VitesseSans-Book.otf") format("opentype")
+}
+@font-face {
+    font-family: "VitesseSans-Bold";
+    src: url("fonts/VitesseSans-Bold/VitesseSans-Bold.otf") format("opentype")
+}
+
+body{
+    background: #fff;
+    font-family: "VitesseSans-Book";
+    font-size: 16px;
+    color: #000000;
+}
+a:hover{
+    text-decoration: none !important;
+}
+/*.wrap{
+    max-width: 1903px;
+}*/
+.uk-link:hover, a:hover{
+    text-decoration: none;
+}
+@media (min-width: 960px){
+    header .uk-container {
+        max-width: 1815px;
+    }
+    #destacados .uk-container{
+        max-width: 1540px;
+    }
+    .uk-container {
+        max-width: 1200px;
+    }
+}
+.uk-container{
+    padding: 0 15px;
+}
+#header{
+    padding: 0;
+    display: table;
+    width: 100%;
+}
+#header{
+    position: relative;
+}
+.head_Inside{
+    width: 100%;
+    padding: 0;
+}
+.navTop{
+    padding: 27px 0;
+    box-sizing: border-box;
+    z-index: 999;
+    background: transparent;
+    position: fixed;
+    width: 100%;
+    max-width: 1903px;
+    top: 0;
+    -webkit-transition: background .3s ease-in-out,padding .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out,padding .3s ease-in-out;
+    transition: background .3s ease-in-out,padding .3s ease-in-out;
+}
+.navTop.uk-navbar-attached{
+    padding: 15px 0;
+    background: #000000;
+}
+/*.navTop.uk-navbar-attached~.head_Inside{
+    margin-top: 79px;
+}*/
+.navTop .itemCenter{
+    align-items: center;
+}
+.navTop h2 img{
+    width: 210px;
+    -webkit-transition: width .3s ease-in-out,padding .3s ease-in-out;
+    -moz-transition: width .3s ease-in-out,padding .3s ease-in-out;
+    transition: width .3s ease-in-out,padding .3s ease-in-out;
+}
+.navTop.uk-navbar-attached h2 img{
+    width: 150px;
+}
+nav{
+    font-size: 20px;
+    color: #555555;
+}
+nav .menu{
+    padding-left: 0;
+    margin: 0;
+}
+nav .menu li{
+    display: inline-block;
+    margin: 0;
+}
+nav .menu a{
+    color: #87888c;
+    display:block;
+    font-family: "Tungsten-Bold";
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+}
+nav .menu li a:hover, nav .menu li a:active,nav .menu li.current-menu-item a{
+    color: #fff;
+    border: 1px solid #fff;
+    text-decoration: none;
+}
+.single nav .menu li a:hover,.single nav .menu li a:active,.single nav .menu li.current-menu-item a{
+    color: #cf0a2c;
+    border: 1px solid #cf0a2c;
+    text-decoration: none;
+}
+.uk-comprar{
+    background: #ea5918;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 12px 30px;
+}
+.uk-comprar:hover, .uk-comprar:active  {
+    background: #f1f1f1;
+    color: #000;
+}
+
+.h3Index{
+    font-size: 40px; 
+    text-align: center;
+    margin: 0 0 45px;
+    position: relative;
+    padding-bottom: 55px;
+    line-height: 45px;
+}
+.h3Index span{
+    font-weight: 300;
+}
+
+#destacados .asombrsos{
+    max-width: 300px;
+    width: 100%;
+    box-sizing: border-box;
+}
+#destacados .redBg{
+    height: 100%;
+    background: #cf0a2c;
+    padding: 0 10px 0 60px;
+}
+.productIndex {
+    padding: 26px 57px 26px 45px;
+    max-width: 1603px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.productIndex img{
+    max-height: 208px;
+    width: auto;
+}
+#destacados .redBg span{
+    color: #fff;
+    font-family: "Tungsten-Bold";
+    display: block;
+    line-height: 100%;
+}
+#destacados .redBg span:first-child{
+    font-size: 42px;
+    letter-spacing: 4px;
+}
+#destacados .redBg span:nth-child(2){
+    font-size: 26px;
+    letter-spacing: 2px;
+}
+#destacados .redBg a{  
+    font-family: "Tungsten-Book";
+    font-size: 21px;
+    color: #fff;
+    margin-top: 15px;
+    letter-spacing: 2px;
+    display: inline-block;
+}
+#destacados .redBg a img{
+    margin-left: 3px;
+}
+#destacados .item p{
+    margin: 0;
+    color: #87888c;
+    font-size: 16px;
+    line-height: 100%;
+}
+#destacados .item .name{
+    font-family: "Tungsten-Medium";
+    font-size: 25px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    line-height: 100%;
+}
+
+#bannerSlide{
+    max-width: 1903px;
+    margin: 0 auto;
+}
+#bannerSlide .uk-slidenav-position .uk-slidenav{
+    display: block;
+}
+.uk-slidenav-position .uk-slidenav{
+    width: 49px;
+    height: 49px;
+    line-height: 1px;
+    font-size: 0;
+    margin-top: -24px;
+}
+.uk-slidenav-position .uk-slidenav:before{
+    display: none;
+}
+.uk-slidenav-position .uk-slidenav-next {
+    right: 5px;
+}
+.uk-slidenav-position .uk-slidenav-previous {
+    left: 5px;
+}
+
+#porQue{
+    background: url(images/elegir.jpg) no-repeat center;
+    background-size: cover;
+    color: #ffffff;
+}
+#porQue .uk-container{
+    height: 665px;
+    max-width: 1140px;
+}
+#porQue h3{
+    font-size: 60px;
+    font-family: "Tungsten-Medium";
+    color: #ffffff;
+    margin: 0;
+    line-height: 100%;
+    letter-spacing: 5px;
+}
+#porQue .uk-vertical-align-middle{
+    width: 100%;
+}
+#porQue h3 span{
+    color: #9fa7ac;
+}
+#porQue p.rendimiento{
+    font-family: "Tungsten-Bold";
+    font-size: 110px;
+    line-height: 100%;
+    margin: 0 0 35px;
+    letter-spacing: 8px;
+}
+#porQue p.detailTxt{
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 590px;
+    margin-bottom: 40px;
+}
+
+#videos{
+    padding: 50px 0 70px;
+}
+#videos .listVideo{
+    max-width: 1900px;
+}
+#videos .h3Index{
+    color: #cf0a2c;
+    font-family: "Tungsten-Bold";
+    font-size: 50px;
+    text-transform: uppercase;
+    padding: 0;
+    margin-bottom: 35px;
+}
+.official{
+    font-family: "Tungsten-Medium";
+    font-size: 36px;
+    margin-bottom: 40px;
+    line-height: 40px;
+    letter-spacing: 3px;
+    color: #87888c;
+}
+#videos .listVideo .item{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#videos .listVideo .item:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background: rgba(13,9,9,0.6);
+    opacity: 0;
+    z-index: 2;
+    -webkit-transition: opacity .3s linear;
+    -moz-transition: opacity .3s linear;
+    transition: opacity .3s linear;
+}
+#videos .listVideo .item:after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    left: 50%;
+    margin-left: -50px;
+    height: 100px;
+    text-align: center;
+    width: 100px;
+    background: url(images/iconPlay.png) no-repeat center;
+    background-size: 100px;
+    z-index: 1;
+    opacity: 0;
+    z-index: 1;
+    -webkit-transition: opacity .3s linear;
+    -moz-transition: opacity .3s linear;
+    transition: opacity .3s linear;
+}
+#videos .listVideo .item .img-gallery{
+    overflow: hidden;
+}
+#videos .listVideo .item .img-gallery img{
+	vertical-align: bottom;
+    -webkit-transition: transform .3s linear;
+    -moz-transition: transform .3s linear;
+    transition: transform .3s linear;
+    max-width: 101%;
+    z-index: 3;
+}
+#videos .listVideo .uk-card-body{
+    cursor: pointer;
+}
+#videos .listVideo .uk-card-body:hover .item .img-listVideo img{
+    transform: scale(1.1);
+}
+#videos .listVideo .uk-card-body:hover .item:before,
+#videos .listVideo .uk-card-body:hover .item:after{
+    opacity: 1;
+}
+.uk-modal .media {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.uk-modal-dialog-lightbox>.uk-close:first-child{
+    z-index: 1;
+}
+#contactanos{
+    background: url('images/bg-contactenos.jpg') no-repeat center top;
+    background-size: cover;
+    color: #ffffff;
+    padding: 60px 0;
+}
+
+#contactanos h3{
+    font-family: "Tungsten-Book";
+    font-size: 50px;
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 50px;
+    margin: 0;
+    word-spacing: 5px;
+}
+#contactanos h3 span{
+    font-family: "Tungsten-Bold";
+}
+#contactanos .linea{
+    border: 1px solid #b1b1b1;
+    width: 160px;
+}
+#contactanos p{
+    font-size: 18px;
+    margin: 10px 0 32px;
+}
+#contactanos .ico-nombre{
+    font-size: 18px!important;
+    background: url("images/ico-nombreusuario.png") right 10px center no-repeat #fafafa!important;
+    padding: 24px 10px!important;
+    color: #838385;
+    font-family: "VitesseSans-Book";
+}
+#contactanos .ico-email{
+    font-size: 18px!important;
+    background: url("images/ico-email.png") right 10px center no-repeat #fafafa!important;
+    padding: 24px 10px!important;
+    color: #838385;
+    font-family: "VitesseSans-Book";
+}
+#contactanos .ico-comment{
+    font-size: 18px!important;
+    background: url("images/ico-comentario.png") right 10px top 10px no-repeat #fafafa!important;
+    padding: 14px 10px !important;
+    color: #838385;
+    font-family: "VitesseSans-Book";
+}
+#contactanos .uk-enviar{
+    background: #cf0a2c;
+    color: #fff;
+    font-size: 26px;
+    line-height: 17px;
+    padding: 14px 0 17px;
+    width: 155px;
+    font-family: "Tungsten-Bold";
+    margin-top: 20px;
+    letter-spacing: 3px;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+ }
+#contactanos .uk-enviar:hover, .uk-enviar:active  {
+    background: #3a3939;
+    border-color: #3a3939;
+}
+#contactanos .ajax-loader{
+    display: none;
+}
+.uk-compraaqui{
+    background: transparent;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 22px 60px;
+    margin-left: 22px;
+    width: 269px;
+    border: 2px solid #ffffff;
+}
+.uk-compraaqui:hover, .uk-compraaqui:active  {
+    background: transparent;
+    border: 2px solid #000;
+    color: #000;
+}
+
+.linea{
+    width: 70px;
+    margin: 0 auto;
+    border: 1px solid #272d32;
+}
+
+.uk-vertabla{
+    background: transparent;
+    color: #d04b29;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 18px 20px;
+    border: 2px solid #f38f11;
+}
+.uk-vertabla:hover, .uk-vertabla:active  {
+    border: 2px solid #d04b29;
+    color: #000;
+}
+
+/*PRODUCTOS PAGE*/
+.page-template-page-products .head_Inside .banner{
+    background: url('images/bannerProduct.jpg') no-repeat center top;
+    background-size: cover;
+}
+.page-template-page-products .head_Inside .uk-container{
+    max-width: 1580px;
+}
+.page-template-page-products .head_Inside .banner .proBanner{
+    margin: 13.7% 0 4%;
+}
+.page-template-page-products .head_Inside .banner .infoBanner{
+    margin: 0 0 8%;
+}
+.page-template-page-products .content .uk-container{
+    max-width: 1155px;
+}
+.page-template-page-products .title{
+    font-size: 35px;
+    text-transform: uppercase;
+    line-height: 100%;
+    margin-bottom: 25px;
+}
+.page-template-page-products .productIndex {
+    padding: 40px 15px 25px 60px;
+}
+#productosList {
+    margin: 65px auto 0;
+    max-width: 1550px;
+}
+#productosList .item{
+    margin-bottom: 60px;
+    padding: 0 10px;
+}
+#productosList .item img{
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    max-height: 208px;
+    width: auto;
+}
+#productosList .item:hover img{
+    transform: scale(1.05);
+}
+#productosList .name{
+    margin-bottom: 10px;
+    font-family: "Tungsten-Medium";
+    text-transform: uppercase;
+    margin-top: 5px;
+    color: #87888c;
+    font-size: 25px;
+    line-height: 100%;
+}
+#productosList .uk-width-large-1-5 a{
+    color: #87888c;
+    text-decoration: none;
+}
+.select .select_box {
+    max-width: 500px;
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    position: relative;
+    border: 1px solid #d1d1d1;
+    border-radius: 3px;
+    background: url(images/down.jpg) no-repeat right 5px center;
+}
+.select .select_box span {
+    color: #838385;
+    font-family: "VitesseSans-Book";
+    display: block;
+    height: 100%;
+    padding: 11px 13px;
+    margin-right: 36px;
+    font-size: 18px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 100%;
+}
+.select .select_box select {
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    cursor: pointer;
+    color: #838385;
+    font-size: 18px;
+    font-family: "VitesseSans-Book";
+}
+.paging{
+    margin-bottom: 100px;
+    margin-top: 20px;
+    padding-left: 40px;
+}
+/*#productosList .wp-pagenavi>.pages{
+    display: none !important;
+}*/
+
+#productosList .paginate_links a,
+#productosList .paginate_links span{
+    min-width: 16px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 4px;
+    vertical-align: top;
+}
+#productosList .paginate_links a{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    background: #ffffff;
+    color: #cf0a2c;
+    text-shadow: none;
+    font-size: 15px;
+    border: 1px solid #cf0a2c;
+    line-height: 15px;
+    padding: 7px 7px 8px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+#productosList .paginate_links span.extend{
+    border: none;
+    line-height: 15px;
+    color: #cf0a2c;
+    vertical-align: bottom;
+}
+#productosList .paginate_links a:hover{
+    background: #cf0a2c;
+    color: #ffffff;
+    border: 1px solid #cf0a2c;
+}
+#productosList .paginate_links span.current{
+    background: #cf0a2c;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    border: 1px solid #cf0a2c;
+    padding: 7px 7px 8px;
+    line-height: 15px;
+}
+
+/*DETAIL PRODUCT PAGE*/
+.single .head_Inside{
+    margin-top: 94px;
+}
+.single .volver{
+    font-family: "Tungsten-Bold";
+    color: #00aeef;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.single .productIndex {
+    padding: 43px 20px 40px 43px;
+}
+.single .showProduct{
+    padding-top: 49px;
+    position: relative;
+}
+.single .showProduct:before{
+    content: '';
+    width: 100%;
+    height: 265px;
+    position: absolute;
+    top: 0;
+    background: #37758C;
+}
+.single .showProduct .uk-container{
+    max-width: 1430px;
+}
+.single .detail-product .name{
+    color: #ffffff;
+    font-size: 70px;
+    text-transform: uppercase;
+    line-height: 100%;
+    font-family: "Tungsten-Bold";
+    margin-top: 35px;
+}
+.single .detail-product .name span{
+    color: #dddddd;
+    display: block;
+    font-size: 50px;
+}
+.single .detail-product .listInfo ul {
+    padding-left: 20px;
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+.single .detail-product .listInfo li{
+    margin-bottom: 8px;
+    color: #777777;
+    font-size: 18px;
+    font-family: "VitesseSans-Bold";
+    list-style-type: square;
+}
+.single .detail-product .listInfo li:last-child{
+    margin-bottom: 0;
+}
+.single .detail-product .component-product .detail-component{
+    margin-right: 55px;
+    margin-bottom: 20px;
+}
+.single .detail-product .component-product .detail-component:last-child{
+    margin-right: 0;
+}
+.single .detail-product .component-product span{
+    display: block;
+}
+.single .detail-product .component-product span:last-child{
+    color: #777777;
+    font-size: 80px;
+    line-height: 100%; 
+    font-family: "Tungsten-Bold";
+    margin-top: 8px;
+}
+.single .detail-product .component-product span:first-child{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #777777;
+    font-family: "Tungsten-Semibold";
+}
+.single .topImg {
+    margin-left: -72px;
+}
+.single .social{
+    margin-top: 25px;
+}
+.single .social iframe{
+    margin-right: 10px;
+}
+.single .social iframe:last-child{
+    margin-right: 0;
+}
+.single .detail-product hr{
+    margin: 10px 0 25px;
+}
+.single .porcion{
+    color: #747879;
+    font-size: 27px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    font-family: "Tungsten-Semibold";
+    position: relative;
+    text-align: center;
+    max-width: 610px;
+}
+.single .porcion:before{
+    content: '';
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -0.5px;
+    background: #747879;
+}
+.single .porcion span{
+    display: inline-block;
+    padding: 0 10px;
+    background: #ffffff;
+    position: relative;
+}
+.single .comprar{
+    background: #cf0a2c;
+    font-family: "VitesseSans-Bold";
+    border: 1px solid #e9242c;
+    text-transform: uppercase;
+    color:  #fff;
+    border-radius: 0;
+    font-size:  18px;
+    text-shadow: none;
+    min-height: 0;
+    line-height: 100%;
+    padding: 14px 0;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    min-width: 180px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.single .comprar:hover,.single .etiqueta:hover{
+    background: #3a3939;
+    color:  #fff;
+    border: 1px solid #3a3939;
+}
+.single .etiqueta{
+    font-family: "VitesseSans-Book";
+    text-transform: uppercase;
+    border: 1px solid #87888c;
+    background: #fff;
+    font-size: 18px;
+    min-width: 180px;
+    padding: 14px 29px;
+    line-height: 100%;
+    border-radius: 0;
+    color: #87888c;
+    margin-right: 20px;
+    text-shadow: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.single .detalles{
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+.single .detalles .title-dt{
+    font-size: 27px;
+    color: #747879;
+    border-bottom: 1px solid #c5c5c5;
+    line-height: 100%;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    font-family: "Tungsten-Semibold";
+    margin: 0;
+}
+.single .detalles .content-dt{
+    font-size: 15px;
+    color: #747879;
+    font-family: "VitesseSans-Book";
+    margin: 20px 0 30px;
+}
+.single .detalles .last{
+    margin-bottom: 0;
+}
+footer {
+    background: #131418;
+    color: #fff;
+    padding: 20px 0 28px 0;
+    font-size: 15px;
+}
+footer .logoFt{
+    margin-bottom: 35px !important;
+    margin-top: 20px;
+}
+footer .copyright {
+    font-size: 11px;
+}
+#contactanos+.wpcf7-mail-sent-ng{
+    margin: 0;
+}
+
+@media screen and (max-width:1600px){
+    #destacados .asombrsos {
+        max-width: 250px;
+    }
+    #destacados .redBg {
+        padding: 0 10px 0 20px;
+    }
+    .page-template-page-products .productIndex {
+        padding: 20px 15px 20px 15px;
+        max-width: 1603px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+@media screen and (min-width:1365px) and (max-width:1400px) {
+    #destacados .asombrsos {
+        max-width: 210px;
+    }
+    #destacados .redBg span:first-child {
+        font-size: 35px;
+        letter-spacing: 3px;
+    }
+    #destacados .redBg span:nth-child(2) {
+        font-size: 20px;
+    }
+    #destacados .item p {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:1368px){
+    .topImg {
+        margin-left: 0;
+    }
+}
+@media screen and (min-width:1023px) and (max-width:1024px){
+    .navTop{
+        padding: 20px 0;
+    }
+    .productIndex {
+        padding: 20px 8px 20px;
+    }
+    #destacados .asombrsos {
+        max-width: 200px;
+    }
+    #destacados .redBg {
+        padding: 0 15px;
+    }
+    #destacados .redBg span:first-child {
+        font-size: 35px;
+        letter-spacing: 3px;
+    }
+    #destacados .redBg span:nth-child(2) {
+        font-size: 20px;
+    }
+    #destacados .item .name {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    #destacados .item p {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:1024px){
+    #porQue h3 {
+        font-size: 58px;
+    }
+    #porQue p.rendimiento {
+        font-size: 83px;
+    }
+    .productos .productIndex {
+        padding: 25px !important;
+    }
+    .productos #destacados .uk-flex {
+        flex-flow: row !important;
+    }
+    .productos #destacados .asombrsos .redBg {
+        padding: 0 !important;
+    }
+    .single #destacados .asombrsos {
+        max-width: 300px !important;
+    }
+    #destacados .asombrsos .uk-flex>div{
+        width: 100%;
+        text-align: center;
+    }
+}
+@media screen and (max-width:959px){
+    .navTop{
+        height: 60px;
+        background: #000000;
+        padding: 7px 0;
+    }
+    .navTop .uk-navbar-brand img {
+        width: 200px;
+    }
+    .navTop .uk-navbar-toggle{
+        height: 40px;
+        padding: 0 5px;
+        color: #fff;
+        font-size: 25px;
+    }
+    .navTop.uk-navbar-attached {
+        height: 60px;
+        padding: 7px 0;
+    }
+    .single .head_Inside {
+        margin-top: 60px;
+    }
+    .uk-nav-offcanvas>li>a{
+        font-size: 17px;
+    }
+    .navTop nav{
+        padding-top: 5px;
+    }
+    .navTop.uk-navbar-attached nav{
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+    .uk-navbar-toggle{
+        height: 72px;
+        text-shadow: none;        
+        -webkit-transition: height .3s ease-in-out;
+        -moz-transition: height .3s ease-in-out;
+        transition: height .3s ease-in-out;
+    }
+    .uk-offcanvas-bar{
+        background: url('images/bgNavSp.jpg') repeat left top;
+    }
+    html .uk-nav.uk-nav-offcanvas>li.uk-active>a{
+        background: #869daa; 
+    }
+    .navTop .uk-navbar-brand{
+        height: auto;
+    }
+    .head_Inside,.navTop.uk-navbar-attached~.head_Inside{
+        margin-top: 60px;
+    }
+    #destacados .uk-flex{
+        flex-wrap: wrap;
+        flex-flow: column;
+    }
+    .single #destacados .uk-flex {
+        flex-flow: row;
+    }
+    .single #destacados .asombrsos .redBg {
+        padding: 0;
+        text-align: center;
+    }
+    .single .detail-product .name {
+        color: #37758C;
+        margin-top: 0;
+    }
+    #destacados .asombrsos{
+        max-width: 100%;
+        width: 100%;
+    }
+    #destacados .asombrsos .redBg{
+        padding: 30px 0;
+        text-align: center;
+    }
+    .marBot{
+        margin-bottom: 30px;
+    }
+    #porQue p {
+        font-size: 25px;
+        line-height: 38px;
+    }
+    #porQue .uk-container {
+        height: 500px;
+    }
+    #contactanos h3 {
+        font-size: 43px;
+        line-height: 45px;
+    }
+    #contactanos form {
+        margin-left: 0;
+    }
+    .paging {
+        padding-left: 0;
+    }
+    .paging ul{
+        text-align: center !important;
+    }
+    footer{
+        text-align: center;
+    }
+}
+@media screen and (max-width:800px){
+    #porQue h3 {
+        font-size: 41px;
+        margin-bottom: 0px;
+    }
+    #porQue p.rendimiento {
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+    #porQue p.detailTxt {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    #videos .h3Index {
+        margin-bottom: 20px;
+    }
+    #videos {
+        padding: 50px 0;
+    }
+    #videos .listVideo .item:after{
+        margin-top: -25px;
+        margin-left: -25px;
+        height: 50px;
+        width: 50px;
+        background-size: 50px;
+    }
+    footer .copyright{
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width:767px){
+    .navTop h2,.menu{
+        display: none !important;
+    }
+    .navTop .uk-navbar-toggle{
+        display: block !important;
+    }
+    #contactanos input[type="text"]{
+        margin-bottom: 25px;
+    }
+    footer .logoFt {
+        margin-bottom: 15px !important;
+        margin-top: 10px;
+    }
+
+}
+@media screen and (max-width:667px){
+    #porQue p.rendimiento {
+        font-size: 55px;
+        margin-bottom: 20px;
+    }
+    .navTop .uk-navbar-toggle {
+        height: 33px;
+        padding: 0;
+    }
+    .navTop .uk-navbar-brand img {
+        width: 156px;
+    }
+    .navTop,.navTop.uk-navbar-attached{
+        height: 47px;
+        padding: 4px 0;
+    }
+    .single .head_Inside,.head_Inside, .navTop.uk-navbar-attached~.head_Inside {
+        margin-top: 47px;
+    }
+    .detalles {
+        margin-bottom: 60px;
+    }
+}
+@media screen and (max-width:640px){
+    #porQue p.rendimiento {
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 568px){
+    #porQue{
+        padding: 0 10px;
+    }
+    #porQue p.detailTxt {
+        margin-bottom: 10px;
+    }
+    #porQue p.rendimiento {
+        font-size: 40px;
+        margin-bottom: 20px;
+        letter-spacing: 3px;
+    }
+    #porQue .uk-container {
+        height: auto;
+        padding: 20px 0 10px;
+    }
+    #porQue h3 {
+        font-size: 29px;
+        line-height: 40px;
+    }
+    #porQue p {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    #videos .h3Index {
+        font-size: 35px;
+        margin-bottom: 10px;
+        line-height: 100%;
+    }
+    #videos {
+        padding: 30px 0;
+    }
+    .official {
+        font-size: 30px;
+        margin-top: 0;
+        margin-bottom: 25px;
+        line-height: 100%;
+        letter-spacing: 2px;
+    }
+    #contactanos {
+        padding: 30px 0;
+    }
+    #contactanos h3 {
+        font-size: 31px;
+        line-height: 40px;
+    }
+    .productos .productIndex {
+        padding: 25px !important;
+    }
+    .productos #destacados .uk-flex {
+        flex-flow: column !important;
+    }
+    .productos #destacados .asombrsos .redBg {
+        padding: 30px 0 !important;
+    }
+    #destacados .asombrsos {
+        max-width: 100% !important;
+    }
+    #destacados .asombrsos .uk-flex>div{
+        width: 100%;
+        text-align: center;
+    }
+    .productos #productosList {
+        margin: 20px auto 0;
+    }
+    .paging {
+        margin-bottom: 70px;
+        margin-top: 0;
+    }
+    .single .detail-product .component-product span:first-child {
+        font-size: 30px;
+    }
+    .single .detail-product .component-product span:last-child {
+        font-size: 51px;
+    }
+    .single .detail-product .name{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 480px){
+    .h3Index {
+        font-size: 26px;
+        margin: 0 0 30px;
+        padding-bottom: 20px;
+        line-height: 31px;
+    }
+    #destacados .redBg span:first-child {
+        font-size: 35px;
+    }
+    #destacados .asombrsos .redBg {
+        padding: 20px 10px;
+    }
+    #porQue h3 {
+        font-size: 25px;
+        line-height: 31px;
+        letter-spacing: 3px;
+    }
+    .disponible img{
+        display: block;
+        margin: 0 auto 20px !important;
+    }
+    .single .productIndex {
+        padding: 30px 20px 25px 43px;
+    }
+    footer{
+        padding: 30px 0 35px;
+    }
+
+}
+@media screen and (max-width: 414px){
+    .uk-navbar-center {
+        max-width: 70%;
+    }
+    #destacados .redBg span:first-child {
+        font-size: 30px;
+    }
+    #destacados .redBg span:nth-child(2) {
+        font-size: 20px;
+    }
+    #porQue p.rendimiento {
+        font-size: 34px;
+    }
+    #porQue h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    #porQue p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .official {
+        font-size: 20px;
+        margin-bottom: 30px;
+        line-height: 100%;
+    }
+    .social .comprar,.social .etiqueta{
+        display: block;
+        margin:  0 auto 10px;
+    }
+    .single .detail-product .component-product .detail-component {
+        margin-right: 30px;
+        margin-bottom: 20px;
+    }
+    .social {
+        text-align: center;
+    }
+    .single #destacados .asombrsos,.single .productIndex {
+        max-width: inherit !important;
+        width: 50%;
+    }
+    .single .productIndex {
+        padding: 30px 10px 25px;
+        text-align: center;
+    }
+
+}
+@media screen and (max-width: 360px){
+}
+@media screen and (max-width: 320px){
+    #destacados .redBg span:first-child {
+        font-size: 26px;
+    }
+    .single .detail-product .component-product .detail-component {
+        margin-right: 25px;
+    }
+}
